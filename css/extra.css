@@ -1,0 +1,68 @@
+/*
+██████████████████████████████████████████
+███████████     HELPPERS      ████████████
+██████████████████████████████████████████
+*/
+.red {
+    color: #ff5959;
+    margin-left: .5rem;
+}
+
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-gutter>[class^="col-"]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*
+██████████████████████████████████████████
+███████████       RESET       ████████████
+██████████████████████████████████████████
+*/
+input, textarea, select {
+    margin-bottom: .5em;
+    margin-top: .3em;
+}
+
+label, input, select, textarea {
+    display: block;
+    width: 100%;
+}
+
+/*
+██████████████████████████████████████████
+███████████ NUEVO CLIENTE FORM ████████████
+██████████████████████████████████████████
+*/
+.client_form__heading h2,
+.client_form__heading p {
+    color: var(--dark-color);
+}
+
+.client_form__heading h2 {
+    font-size: 2rem;
+}
+
+.client_form__inputs {
+    margin: 2rem 0;
+}
+
+.client_form__inputs input,
+.client_form__inputs select,
+.client_form__inputs textarea {
+    padding: .5rem 1rem;
+}
+
+/* ========== DATA CLIENT ==========*/
+#data__client {
+    font-size: .8em;
+    height: 100%;
+    max-height: 68vh;
+    overflow: scroll;
+}

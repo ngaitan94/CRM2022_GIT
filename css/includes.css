@@ -1,0 +1,117 @@
+/*
+██████████████████████████████████████████
+███████████       HEADER      ████████████
+██████████████████████████████████████████
+*/
+
+/*░░░░░░░░░░      HEADER      ░░░░░░░░░░░*/
+.header {
+    width: 100%;
+}
+
+/*░░░░░░░░░░      NAVBAR      ░░░░░░░░░░░*/
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+    border-right: 1px solid var(--dark-color);
+}
+
+/*░░░░░░░░░░   NAVBAR LOGO   ░░░░░░░░░░░*/
+.navbar__logo {
+    width: 25%;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--dark-color);
+}
+
+.navbar__logo img {
+    min-width: 150px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/*░░░░░░░░░░   NAVBAR LIST   ░░░░░░░░░░░*/
+.navbar__list {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__item.current {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.navbar__item:hover .navbar__link {
+    color: var(--primary-color);
+}
+
+.navbar__link {
+    font-size: .8rem;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+/*░░░░░░░░░░      LOGIN      ░░░░░░░░░░░*/
+.login {
+    width: 25%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 1px solid var(--dark-color);
+}
+
+.login__photo {
+    max-width: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+}
+
+.login__name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.login__job {
+    font-size: .8rem;
+    font-weight: normal;
+    color: var(--dark-grey);
+}
+
+
+/*
+██████████████████████████████████████████
+███████████    TOAST NOTIF    ████████████
+██████████████████████████████████████████
+*/
+#notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.toast {
+    max-width: 350px;
+    padding: 1em 2em;
+    margin: 1em;
+    color: #000000;
+    background-color: #a2d7ab;
+    border: 1px solid #000000;
+    font-weight: bold;
+}
+
